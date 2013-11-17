@@ -8,12 +8,6 @@ from shoppinglist.interfaces import (
 from zope.interface import implementer
 
 
-@implementer(IShoppingLists)
-class ShoppingLists(models.Model):
-    """DB model for shopping lists."""
-    lists = models.ForeignKey('Shopping list')
-
-
 @implementer(IProduct)
 class Product(models.Model):
     """DB model for single product."""
@@ -25,6 +19,12 @@ class ShoppingList(models.Model):
     """DB model for single shopping list."""
     products = models.ForeignKey(Product)
     created = models.DateTimeField()
+
+
+@implementer(IShoppingLists)
+class ShoppingLists(models.Model):
+    """DB model for shopping lists."""
+    lists = models.ForeignKey(ShoppingList)
 
 
 @implementer(IRecipe)
