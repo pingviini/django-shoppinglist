@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/django-shoppinglist.iml" filepath="$PROJECT_DIR$/.idea/django-shoppinglist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shoppingproject/.idea/shoppinglist.iml" filepath="$PROJECT_DIR$/../shoppingproject/.idea/shoppinglist.iml" />
+    </modules>
+  </component>
+</project>
+
